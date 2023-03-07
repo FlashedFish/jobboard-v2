@@ -11,17 +11,25 @@
         height:  360px;
         width:  100%;
         object-fit:cover;
+        margin-bottom:12px;
       }
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src="https://jovian-careers-website.jacobg12.repl.co/static/banner.jpg">
       <div class= "container">
       <h1 class="text-center mt-2 mb-4"> Jacobs Job Board </h1>
-      <img class="img-fluid" id="banner" src="https://jovian-careers-website.jacobg12.repl.co/static/banner.jpg">
-      <h2 class="text-center mt-2"> About This Job Board</h2>
+      <div class="row" style="margin-bottom:16px">
+        <div class="col-md-6">
       <p class="lead">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
+        </div>
+        <div class="col-md-6 d-none d-md-block">
+        <img src="https://jovian-careers-website.jacobg12.repl.co/static/people.jpg" style="height:320px;border-radius:4px;">
+        </div>
+      </div>
       <h2 class="text-center mt-2">Open Positions</h2>
       <p>
         <div>
@@ -31,9 +39,10 @@
         </div>
       </p>
         <div class="text-center">
-      <button class="btn btn-primary btn-large">contact us</button>
-          <p class="mt-4">Copyright 2023</p>
+      <a class="btn btn-primary btn-large" href="mailto:hello@flashedfish.dev?subject=Question%20about%20job%20opening&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20question%3A%20%3Cmy%20question%20here%3E" >contact us</a>
+          
           </div>
         </div>
+    {% include 'footer.html' %}
   </body>
 </html>
