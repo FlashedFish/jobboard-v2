@@ -14,8 +14,8 @@
       </h1>
     <h3 class="mb-2"> {{job.title}} </h3>
     <p class="lead mt-0">{{job.location}}</p>
-    <h4>salary</h4>
-    <p>{{job.currency}} {{job.salary}}</p>
+    <h4 class= "col-md-6">Salary</h4> 
+    <p class="col-md-6">{{job.currency}} {{job.salary}}</p>
     <h4>responsibilities</h4>
     <ul>
       {% for line in job.responsibilities.split("\n") %}
@@ -29,7 +29,7 @@
         <li>{{line}}</li>
         {%endfor%}
       </ol>
-    
+    {% include 'application_form.html' %}
     </div>
     {% include 'footer.html' %}
   </body>
