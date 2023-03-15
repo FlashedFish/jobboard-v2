@@ -11,29 +11,100 @@
     
       <div class= "container">
       <h1 class="text-center mt-2 mb-4"> Jacobs Ghiz Resume </h1>
-      <div class="row" style="margin-bottom:16px">
-        <div class="col-md-6">
+      <div class="row" style="margin-bottom:32px">
+        <div class="col-md-6 ">
       <p class="lead">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+       As a Computer Science graduate with a strong skillset in C++, Python, SQL, Tableau, and Java, combined with valuable experience as a Business Analyst Intern and a successful track record as a Freelance Software Developer, I am passionate in developing innovative solutions to complex problems. I am confident in my ability to effectively communicate complex technical concepts, collaborate with cross-functional teams, and deliver high-quality software solutions that drive business success.
       </p>
         </div>
-        <div class="col-md-6 d-none d-md-block">
-        <img src="https://jovian-careers-website.jacobg12.repl.co/static/people.jpg" style="height:320px;border-radius:4px;">
+        <div class="col-md-6 d-none d-md-block text-center">
+        <img src="https://jobboard-v2.jacobg12.repl.co/static/tinywow.png" style="width:280px;height:320px;border-radius:4px;">
         </div>
       </div>
-      <h2 class="text-center mt-2">Open Positions</h2>
-      <p>
-        <div>
-        {% for job in jobs %}
-          {%include 'jobitem.html' %}
-        {% endfor %}
+      
+      <div class="row" style="margin-bottom:16px">
+        <div class="col-md-3 d-none d-md-block pb-32">
+          <br>
+          <br>
+          <br>
+          <h2 class="text-center mt-2 mb-3"> Contact </h2>
+          <h4 class=" p-2" ><a href="mailto:jacobjghiz@gmail.com"><b>jacobjghiz@gmail.com</b></a></h4>
+          <h4 class=" p-2" ><b>321 - 682 - 8696</b></h4>
+          <h4 class=" p-2" ><b>St.Petersburg, FL</b></h4>
+          <br>
+          <br>
+          <br>
+          <h2 class="text-center mt-2 mb-3"> Education </h2>
+          <h4 class=" p-2" >Bachelors in Computer Science</h4>
+          <h5 class=" p-2" >University of South Florida</h5>
+          <h5 class="lead p-2" ><b>Start 2020 - End 2022</b></h5>
+          <br>
+          <br>
+          <br>
+          <h2 class="text-center mt-2 mb-3"> Skills </h2>
+          <h3 class="lead p-2" ><b><ul>
+            <li class="p-2">SQL (MySQL, Postgres)</li>
+            <li class="p-2">Python (Numpy, Pandas, Flask)</li>
+            <li class="p-2">C++</li>
+            <li class="p-2">Java</li>
+            <li class="p-2">Tableau</li>
+          </ul></b></h3>
+          <br>
+          <br>
+          <br>
+          <h2 class="text-center mt-2 mb-3"> Volunteering </h2>
+          <h4 class=" p-2" >Community Access Providers</h4>
+          <h5 class="lead p-2" ><b>2016-2018</b></h5>
+          <h5 class="lead p-2" ><b>Provide support and assist in the quality of living for disabled individuals</b></h5>
+          <br>
+          <h4 class="  p-2" >Mercy-Ful Project</h4>
+          <h5 class="lead p-2" ><b>2017-2018</b></h5>
+          <h5 class="lead p-2" ><b>Care for and assist in rehoming and sheltering stray house pets </b></h5>
+          
         </div>
-      </p>
+        <div class="col-md-9">
+          <div style="margin-bottom:32px">
+            <h1 class="text-center mt-2 mb-4"> Projects </h1>
+            <h3 class="text-center mt-2 mb-4"> Database Driven Jobboard </h3>
+            <h4 class="text-center mt-2 mb-4"> <a href="https://flashedfish.dev/jobboard" >FlashedFish/jobboard</a> </h4>
+            <p class="lead">
+              <ul>
+                <li>A fucntional mock jobboard built with dynamic pages for each listing using Python, Flask, SQLAlchemy, Bootstrap for the frontend and MySQL for the backend. Maximizing space efficeny for cloud database usage allows more than one million jobs to be stored and read through</li>
+                <li>The jobboard creates a new webpage for each job posting dynamically and automatically formats the information from the sql database using my sql  workbench to test and edit queries before pushing to the cloud database at planetscale</li>
+                <li>Applications filled in the form at the bottom of the page are stored within a separate sql table to be viewed my administrators(me)</li>
+                <li>Future functionality will include profile pages and applicants being able to view their applications</li>
+              </ul>
+            </p>
+          </div>
+          <h1 class="text-center mt-2 mb-4"> Work Experience </h1>
+          <h3 class="text-center mt-2 mb-4"> Business Analyst Intern </h3>
+          <h4 class="text-center mt-2 mb-4"> <a href="https://www.ambrygen.com" >Ambry Genetics Corporation</a></h4>
+          <h5>Mar 2022 - Sep 2022</h5>
+          <p class="lead">
+            <ul>
+              <li>Collaborated with cross-functional teams to identify and capitalize on opportunities found through data driven insights that lead to the adoption of  new product line resulting in over $800,000 in sales.</li>
+              <li>Leveraged expertise in data analysis techniques such as regression analysis, predictive modeling, and data mining to navigate complex business environments. Utilized tools such as Tableau and Python to analyze large data volumes and generate actionable insights that informed data-driven decision-making. </li>
+              <li>Worked closely with technical teams to access and integrate data from multiple sources, ensuring accurate and comprehensive reporting and analysis.</li>
+              <li>Established strong partnerships with retail and other business stakeholders to identify strategic opportunities and drive measurable results, ultimately contributing to the overall success of the organization.</li>
+            </ul>
+        </p>
+          <h3 class="text-center mt-2 mb-4"> Freelance Software Developer </h3>
+          <h4 class="text-center mt-2 mb-4"> Upwork/ Fiverr </h4>
+          <h5>Aug 2022 - Present</h5>
+          <ul>
+            <li>Worked with several not for profit organizations to help them achieve their goals with databases while providing applicable analysis</li>
+            <li>Utilized data files extracted from electronic medical records (EMR) to create reports and other outputs reflecting patient outcomes for hospitals</li>
+            <li>Supports data analyses and research to support data strategy efforts for NPIC, including web-facing/member-facing reporting products</li>
+            <li>Access, gather & report import data to provide shipping visibility to various nationwide shipping destinations to leverage & optimize carriers & shipping lanes.</li>
+            <li>Investigate root causes for issues/anomalies and provide creative yet logical solutions for solving data and/or business intelligence problems. </li>
+            <li>Produce reports for business leaders that are uniform, accurate, and consistent. Summarize key findings and propose action plans.</li>
+          </ul>
+        </div>
+      </div>
         <div class="text-center">
       <a class="btn btn-primary btn-large lead" href="mailto:jacobjghiz@gmail.com?subject=Question%20about%20Jacob%20&body=%3Cyour%20name%20here%3E%0D%0A%0D%3CYour%20question%20here%3E" >Contact Me</a>
-          
-          </div>
         </div>
+      </div>
     {% include 'footer.html' %}
   </body>
 </html>
