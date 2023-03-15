@@ -6,13 +6,25 @@
     
   </head>
   <body>
-    <h4>Full Name</h4>
-    <div>{{application['full_name']}}</div>
-    <h4>Email</h4>
-    <div>{{application['email']}}</div>
-    <h4>LinkedIn</h4>
-    <div>{{application['LinkedIn']}}</div>
-    <h4></h4>
-    
+    {% include 'nav.html' %}
+    {% include 'banner.html' %}
+     <div class ="container">
+      <h1 class="text-center mt-2 mb-4">
+        Application for <b>{{job['title']}}</b> Submitted
+      </h1>
+      <h4 class="mb-0">Full Name</h4>
+      <div class="mb-4">{{application['full_name']}}</div>
+      <h4 class="mb-0">Email</h4>
+      <div class="mb-4">{{application['email']}}</div>
+      <h4 class="mb-0">LinkedIn</h4>
+      <div class="mb-4">{{application['LinkedIn']}}</div>
+      <h4 class="mb-0">Education</h4>
+      <div class="mb-4">{{application['Education']}}</div>
+      <h4 class="mb-0">Work Experience</h4>
+      <div class="mb-4">{{application['Work_Experience']}}</div>
+      <h4 class="mb-0">Resume</h4>
+      <div class="mb-4">{{application['Resume']}}</div>
+    </div>
+    {% include 'footer.html' %}
   </body>
 </html>

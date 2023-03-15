@@ -7,10 +7,10 @@
   <body>
     
     {% include 'nav.html' %}
-    {% include 'carousel.html' %}
+    {% include 'banner.html' %}
     
       <div class= "container">
-      <h1 class="text-center mt-2 mb-4"> Jacobs Ghiz Resume </h1>
+      <h1 class="text-center mt-2 mb-4"> Jacobs job Board </h1>
       <div class="row" style="margin-bottom:16px">
         <div class="col-md-6">
       <p class="lead">
@@ -30,10 +30,14 @@
         </div>
       </p>
         <div class="text-center">
-      <a class="btn btn-primary btn-large lead" href="mailto:jacobjghiz@gmail.com?subject=Question%20about%20Jacob%20&body=%3Cyour%20name%20here%3E%0D%0A%0D%3CYour%20question%20here%3E" >Contact Me</a>
+      <a class="btn btn-primary btn-large lead" href="mailto:hello@flashedfish.dev?subject=Question%20about%20job%20opening&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20question%3A%20%3Cmy%20question%20here%3E" >Contact Us</a>
           
           </div>
         </div>
     {% include 'footer.html' %}
   </body>
+  <script>
+    $(document).ready(function () {
+    $("#{{request.endpoint}}").parent().addClass("active"); })
+</script>
 </html>

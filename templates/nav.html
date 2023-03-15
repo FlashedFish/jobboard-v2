@@ -1,4 +1,4 @@
-<nav class="navbar shadow p-3 mb-5 bg-body rounded fixed-top">
+<!--<nav class="navbar shadow p-3 mb-5 bg-body rounded fixed-top">
   <div class="container">
     <a class="navbar-brand" href="/">
       <img src="/static/favicon.png" alt="Bootstrap" width="30" height="24">
@@ -6,4 +6,26 @@
     </a>
   </div>
 </nav>
-<div style="height:52px"></div>div>
+<div style="height:52px"></div>-->
+
+  <div class="container">
+    <header class="d-flex shadow p-3 flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <img src="/static/favicon.png" alt="Bootstrap" width="40" height="40">
+        <svg class="bi me-2" width="40" height="40"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4">Flashed Fish</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class=""><a href="/" class="nav-link " aria-current="page">Home</a></li>
+        <li id="jobboard" class="nav-item"><a href="{{  url_for('jobboard') }}" class="nav-link">Jobs</a></li>
+        <li class="nav-item"><a href="/wip.html" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      </ul>
+    </header>
+  </div>
+  <script>
+    $(document).ready(function () {
+    $("#{{request.endpoint}}").parent().addClass("active"); })
+</script>
