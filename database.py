@@ -28,9 +28,27 @@ def load_job_from_db(id):
       return dict(rows[0]._mapping)
 
 
+def add_job_to_db(job_data):
+  with engine.connect() as conn:
+
+    query =text(
+      "INSERT INTO jobs (title, location, salary, currency, responsibilities, requirements) VALUES (:title, :location, :salary, :currency, :responsibilities, :requirements)"
+    )
+    conn.execute(query,dict(
+                         
+                         title=job_data['title'],
+                         location=job_data['location'],
+                         salary=job_data['salary'],
+                         currency=job_data['currency'],
+                         responsibilities=job_data['responsibilities'],
+                         requirements=job_data['requirements']))
+
+
+  
+
 def add_application_to_db(job_id, data):
   with engine.connect() as conn:
-    #   query = text("INSERT INTO applications job_id, full_name, email, linkedin_url, education, work_experience, resume_url) VALUES (:job_id, :full_name, :email, :linkedin_url, :education, :work_experience, :resume_url)")
+    
     query = text(
       "INSERT INTO applications (job_id, full_name, email, linkedin_url, education, work_experience, resume_url) VALUES (:job_id, :full_name, :email, :linkedin_url, :education, :work_experience, :resume_url)"
     )
