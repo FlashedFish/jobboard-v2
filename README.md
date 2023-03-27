@@ -1,2 +1,2 @@
-# jovian-careers-website
-Jovian a careers website
+# flashed fish website 
+jacob ghiz resume and portfolio
