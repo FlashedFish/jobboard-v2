@@ -6,12 +6,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-  return render_template('home.html')
-  
-@app.route("/jobboard")
-def jobboard():
   jobs = load_jobs_from_db()
   return render_template('jobboard.html', jobs=jobs, company_name="Jacobs")
+  return render_template('home.html')
+  
+@app.route("/resume")
+def jobboard():
+  
+  return render_template('home.html')
 
 @app.route("/wip")
 def work_in_progress():
@@ -38,9 +40,9 @@ def create_job_form():
   
 @app.route("/post/sent", methods=['post'])
 def create_job():  
-  data =request.form
-  add_job_to_db(data)
-  return render_template('jobcreated.html',job=data)
+  job_data =request.form
+  add_job_to_db(job_data)
+  return render_template('jobcreated.html',job=job_data)
 
 
 
